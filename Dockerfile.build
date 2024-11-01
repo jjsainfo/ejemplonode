@@ -8,6 +8,5 @@ RUN npm install
 
 COPY index.js .
 
-COPY main.js .
 
 CMD [ "npm", "test" ]
