@@ -25,7 +25,7 @@ pipeline {
             steps {
                 script {
                     //cualquier sh que vean, en windows es bat
-                    bat 'echo ${DOCKER_HUB_CREDENTIALS_PASS} | docker login -u ${DOCKER_HUB_CREDENTIALS_USER} --password-stdin'
+                    bat 'echo ${DOCKER_HUB_CREDENTIALS_PASSWORD} | docker login -u ${DOCKER_HUB_CREDENTIALS_USER} --password-stdin'
                 }
             }
         }
